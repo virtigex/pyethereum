@@ -26,3 +26,5 @@ pyethereum/monkeypatch.py
 .eggs
 .cache
 .env
+.idea/
+build/
