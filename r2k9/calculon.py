@@ -22,10 +22,9 @@ class Calculon:
         addr = utils.privtoaddr(key)
         addr2 = utils.privtoaddr(key2)
 
-        env = Env()
-        state = State(env=env)
+        state = State()
         #g = genesis.mk_genesis_block({addr:10**18})
-        g = genesis.mk_genesis_block(env)
+        g = genesis.mk_genesis_block(state.env)
         print(dir(g))
         da = state.account_to_dict(addr)
         print(da)
